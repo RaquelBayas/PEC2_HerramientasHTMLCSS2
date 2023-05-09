@@ -1,0 +1,15 @@
+{
+    "extends": [
+      "stylelint-config-recommended-scss",
+      "stylelint-config-recess-order"
+    ],
+    "rules": {
+      "color-no-invalid-hex": true,
+      "string-no-newline": true,
+      "block-no-empty": null,
+      "unit-no-unknown": true,
+      "no-empty-source": true,
+      "property-no-unknown": true
+    }
+  }
+  

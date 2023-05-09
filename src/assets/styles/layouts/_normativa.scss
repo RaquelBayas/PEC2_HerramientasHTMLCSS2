@@ -1,0 +1,89 @@
+.normas-img2 {
+  height: 400px;
+}
+
+.container {
+  display: block;
+}
+.contenedor {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.reglas {
+  padding: 1rem 2rem;
+  letter-spacing: 0.1ch;
+  border: 2px solid $colorLogo;
+  border-radius: 10px;  
+
+  .reglas__list {
+    padding: 0 10px 0 0;
+    line-height: 2;
+    list-style-type: none;
+  }
+
+  ul li::before {
+    font-family: $font-awesome;
+    color: $colorLogo;
+    list-style-type: stylet;  
+    content: "\f441";      
+  }
+}
+
+.containerContent {
+  margin: 2rem 0;
+}
+
+.containerFooter {
+  margin: 2rem 0;
+}
+
+.row {
+  padding: 0px;
+}
+
+.row.containerHeader {
+  padding: 0 4rem;
+  margin-top: 9rem;
+}
+
+/* Estilos para pantallas pequeñas */
+@media only screen and (max-width: 768px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-md-8,
+  .col-md-4 {
+    width: 100%;
+  }
+
+  .normas-img2 {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+/* Estilos para pantallas medianas y grandes */
+@media only screen and (min-width: 769px) {
+  .row {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+
+  .col-md-8 {
+    width: 65%;
+    margin-right: 30px;
+  }
+
+  .col-md-4 {
+    width: 35%;
+  }
+
+  .normas-img2 {
+    width: 100%;
+    margin-top: 0;
+  }
+}

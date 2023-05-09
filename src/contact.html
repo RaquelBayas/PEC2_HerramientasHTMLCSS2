@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/styles/main.scss"
+        />
+        <title>Document</title>
+    </head>
+    <body>
+        <include src="./views/header.html"></include>
+        <div class="contact">
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <form action="POST" class="contact-form" netlify>
+                        <div class="row">
+                            <div class="col-12 mb-3">
+                                <label for="name" class="form-label"
+                                    >Nombre</label
+                                >
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="name"
+                                    placeholder="Nombre"
+                                />
+                                <div class="invalid-feedback">
+                                    Por favor introduce un nombre
+                                </div>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <label for="email" class="form-label"
+                                    >Correo electrónico</label
+                                >
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="email"
+                                    placeholder="Correo electrónico"
+                                />
+                                <div class="invalid-feedback">
+                                    Por favor introduce un correo electrónico
+                                    correcto
+                                </div>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <label for="subject" class="form-label"
+                                    >Asunto</label
+                                >
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="asunto"
+                                    placeholder="Asunto"
+                                />
+                                <div class="invalid-feedback">
+                                    Por favor introduce un asunto
+                                </div>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <label for="message" class="form-label"
+                                    >Mensaje</label
+                                >
+                                <div class="form-floating">
+                                    <textarea
+                                        class="form-control"
+                                        id="message"
+                                        rows="10"
+                                    ></textarea>
+                                </div>
+                                <div class="invalid-feedback">
+                                    Por favor introduce un mensaje
+                                </div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="submit">Enviar mensaje</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <include src="./views/footer.html"></include>
+        <script type="module" src="./assets/scripts/main.js"></script>
+        <!-- do not remove this line! -->
+    </body>
+</html>
