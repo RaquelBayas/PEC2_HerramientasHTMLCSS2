@@ -32,7 +32,7 @@ body {
   text-transform: uppercase;
 }
 
-// Footer icons
+/* Footer icons */
 .social-icon {
   margin-right: 10px;
 }
@@ -41,30 +41,41 @@ h2 {
   text-align: center;
 }
 
+button {
+  padding: 12px 30px;
+  border: 0;
+  border-radius: 50px;
+  transition: 0.4s;
+}
+
+.container-home__style{
+  background-color: $background;
+  border-radius: 10px;
+}
+
 @supports (display: grid) {
-  .uoc-container {
+  .container-home {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(8, 1fr);
     min-height: auto;
     margin: 10vh 10vh 2vh 10vh;
-    background-color: $background;
-    border-radius: 10px;
   }
 
-  .descripcion {
+  .container-home__descripcion {
     grid-row: 1 / 2;
     grid-column: 1 / 5;
-    margin: auto;
+    margin: auto 3rem;
+    line-height: 2.5;
     text-align: center;
   }
 
-  .imagen {
+  .container-home__imagen {
     grid-row: 1 / 2;
     grid-column: 5 / 9;
   }
 
-  .imagen2 {
+  .container-home__imagen2 {
     grid-row: 2 / 3;
     grid-column: 1 / 5;
   }
@@ -76,7 +87,7 @@ h2 {
     border-radius: 10px;
   }
 
-  .inscripcion {
+  .container-home__inscripcion {
     grid-row: 2 / 3;
     grid-column: 5 / 9;
     margin: auto;
@@ -86,98 +97,41 @@ h2 {
   .inscripcion-content {
     padding: 1rem;
     margin-top: 1rem;
-
   }
 }
 
 @media screen and (max-width: 768px) {
-  .uoc-container {
+  .container-home {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(1, 1fr);
     min-height: auto;
-    margin: 10vh 10vh 2vh 10vh;
-    background-color: $background;
-    border-radius: 10px;
+    margin: 13vh 10vh 2vh 10vh;
   }
 
-  .descripcion {
+  .container-home__descripcion {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
-    margin: auto;
+    margin: auto 3rem;
+    line-height: 2.5;
     text-align: center;
   }
 
-  .imagen {
+  .container-home__imagen {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
   }
 
-  .imagen2 {
+  .container-home__imagen2 {
     grid-row: 4 / 5;
     grid-column: 1 / 2;
   }
 
-  .inscripcion {
+  .container-home__inscripcion {
     grid-row: 3 / 4;
     grid-column: 1 / 2;
-    margin: auto;
+    margin: auto 3rem;
+    line-height: 2;
     text-align: center;
   }
-
 }
-
-/*
-.uoc-container {
-  background-color: $background;
-  min-height: auto;
-  height: 80vh;
-  margin: 10vh 10vh 2vh 10vh;
-
-  .descripcion {
-    flex: 1 0 60%;
-    padding: 1rem;
-  }
-
-  .imagen {
-    flex: 1 0 40%;
-    padding: 1rem;
-  }
-
-  .imagen2 {
-    flex: 1 0 30%;
-    padding: 1rem;
-  }
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .inscripcion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-
-    .inscripcion-content {
-      display: flex;
-      flex-wrap: nowrap;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-
-      p {
-        text-align: center;
-        margin-bottom: 1rem;
-      }
-
-      button {
-        width: 20%;
-      }
-    }
-  }
-}
-*/

@@ -1,17 +1,16 @@
 @use "sass:color";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300&display=swap');
 
-$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-  "Segoe UI Symbol";
 $font-family-serif: "Georgia", "Times New Roman", serif;
 $font-family-Montserrat: "Montserrat", "sans-serif";
 
-$colorLogo: #e65b4f;
+$colorLogo: rgb(230, 91, 79);
+$colorItems: rgb(255, 214, 173);
 $background: rgb(238, 236, 223);
+$backgroundContact: rgb(5, 45, 63);
 $mqMinWidth: 420px;
 $font-awesome: "FontAwesome";
 
 $theme-colors: (
- "primary": rgb(126, 128, 255) // pon el código de color que prefieras
+ "primary": rgb(255, 142, 81) // pon el código de color que prefieras
 );

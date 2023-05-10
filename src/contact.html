@@ -9,14 +9,15 @@
             type="text/css"
             href="./assets/styles/main.scss"
         />
-        <title>Document</title>
+        <title>Contacto</title>
     </head>
     <body>
         <include src="./views/header.html"></include>
         <div class="contact">
             <div class="row">
                 <div class="col-md-6 mx-auto">
-                    <form action="POST" class="contact-form" netlify>
+                    <h2>Formulario de contacto</h2>
+                    <form class="contact-form" netlify>
                         <div class="row">
                             <div class="col-12 mb-3">
                                 <label for="name" class="form-label"
@@ -28,9 +29,6 @@
                                     id="name"
                                     placeholder="Nombre"
                                 />
-                                <div class="invalid-feedback">
-                                    Por favor introduce un nombre
-                                </div>
                             </div>
                             <div class="col-12 mb-3">
                                 <label for="email" class="form-label"
@@ -57,9 +55,6 @@
                                     id="asunto"
                                     placeholder="Asunto"
                                 />
-                                <div class="invalid-feedback">
-                                    Por favor introduce un asunto
-                                </div>
                             </div>
                             <div class="col-12 mb-3">
                                 <label for="message" class="form-label"
@@ -71,9 +66,6 @@
                                         id="message"
                                         rows="10"
                                     ></textarea>
-                                </div>
-                                <div class="invalid-feedback">
-                                    Por favor introduce un mensaje
                                 </div>
                             </div>
                             <div class="col-12 text-center">
