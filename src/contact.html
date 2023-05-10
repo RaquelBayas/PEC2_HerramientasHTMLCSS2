@@ -17,7 +17,7 @@
             <div class="row">
                 <div class="col-md-6 mx-auto">
                     <h2>Formulario de contacto</h2>
-                    <form class="contact-form" netlify>
+                    <form class="contact-form" method="POST" netlify>
                         <div class="row">
                             <div class="col-12 mb-3">
                                 <label for="name" class="form-label"
@@ -27,6 +27,7 @@
                                     type="text"
                                     class="form-control"
                                     id="name"
+                                    name="name"
                                     placeholder="Nombre"
                                 />
                             </div>
@@ -38,6 +39,7 @@
                                     type="email"
                                     class="form-control"
                                     id="email"
+                                    name="email"
                                     placeholder="Correo electrónico"
                                 />
                                 <div class="invalid-feedback">
@@ -53,6 +55,7 @@
                                     type="text"
                                     class="form-control"
                                     id="asunto"
+                                    name="asunto"
                                     placeholder="Asunto"
                                 />
                             </div>
@@ -64,6 +67,7 @@
                                     <textarea
                                         class="form-control"
                                         id="message"
+                                        name="message"
                                         rows="10"
                                     ></textarea>
                                 </div>
